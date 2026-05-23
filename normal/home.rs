@@ -131,6 +131,30 @@ fn Projects() -> Element {
                                         i { class: "fa-brands fa-github" }
                                     }
                                 }
+                                if let Some(forgejo_url) = project.forgejo_url() {
+                                    a { class: "text-fg hover:opacity-70",
+                                        href: "{forgejo_url}",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        i { class: "fa-brands fa-git-alt" }
+                                    }
+                                }
+                                if let Some(npm_url) = project.npm_url {
+                                    a { class: "text-fg hover:opacity-70",
+                                        href: "{npm_url}",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        i { class: "fa-brands fa-npm" }
+                                    }
+                                }
+                                if let Some(crate_url) = project.crate_url {
+                                    a { class: "text-fg hover:opacity-70",
+                                        href: "{crate_url}",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        i { class: "fa-brands fa-rust" }
+                                    }
+                                }
                                 if let Some(site_url) = project.site_url {
                                     a { class: "text-fg hover:opacity-70",
                                         href: "{site_url}",
