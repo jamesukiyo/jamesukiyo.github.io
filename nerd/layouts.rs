@@ -174,7 +174,7 @@ pub fn Footer() -> Element {
             // file type and position + copyright
             div { class: "flex items-center",
                 div { class: "text-white/30 text-xs mr-2",
-                    "Copyright © 2025 - PlumJam <git@plumj.am>"
+                    "Copyright © 2025-present - PlumJam <git@plumj.am>"
                 }
                 div { class: "bg-[#3C2240] text-[#F2EEEB] px-3 flex items-center",
                     {filetype_component}
