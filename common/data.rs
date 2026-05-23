@@ -77,6 +77,7 @@ pub enum ProjectType {
     Config,
     WebApp,
     Embedded,
+    Automation,
 }
 
 impl ProjectType {
@@ -91,6 +92,7 @@ impl ProjectType {
             Self::Config => "Config",
             Self::WebApp => "Web Application",
             Self::Embedded => "Embedded",
+            Self::Automation => "Automation",
         }
     }
 }
@@ -145,18 +147,6 @@ impl ProjectInfo {
 
 pub static PROJECTS: &[ProjectInfo] = &[
     ProjectInfo {
-        name:         "plumj.am",
-        short_desc:   "This website!",
-        long_desc:    None,
-        project_type: ProjectType::Website,
-        tech_used:    &["Rust", "Dioxus", "Tailwind"],
-        repo:         Some("plumj.am"),
-        crate_url:    None,
-        npm_url:      None,
-        site_url:     Some("https://plumj.am"),
-        media:        None,
-    },
-    ProjectInfo {
         name:         "Charfreq",
         short_desc:   "The fastest character counter.",
         long_desc:    None,
@@ -193,6 +183,18 @@ pub static PROJECTS: &[ProjectInfo] = &[
         media:        None,
     },
     ProjectInfo {
+        name:         "Gerrit Autosubmit",
+        short_desc:   "An autosubmit bot for Gerrit changes.",
+        long_desc:    None,
+        project_type: ProjectType::Automation,
+        tech_used:    &["Rust"],
+        repo:         Some("gerrit-autosubmit"),
+        crate_url:    Some("https://crates.io/crates/gerrit-autosubmit"),
+        npm_url:      None,
+        site_url:     None,
+        media:        None,
+    },
+    ProjectInfo {
         name:         "NixOS",
         short_desc:   "PlumJam's NixOS configuration collection.",
         long_desc:    None,
@@ -202,6 +204,18 @@ pub static PROJECTS: &[ProjectInfo] = &[
         crate_url:    None,
         npm_url:      None,
         site_url:     None,
+        media:        None,
+    },
+    ProjectInfo {
+        name:         "plumj.am",
+        short_desc:   "This website!",
+        long_desc:    None,
+        project_type: ProjectType::Website,
+        tech_used:    &["Rust", "Dioxus", "Tailwind"],
+        repo:         Some("plumj.am"),
+        crate_url:    None,
+        npm_url:      None,
+        site_url:     Some("https://plumj.am"),
         media:        None,
     },
     ProjectInfo {
