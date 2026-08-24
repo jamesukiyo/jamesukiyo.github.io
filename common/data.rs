@@ -2,7 +2,7 @@ use core::fmt;
 
 use dioxus::prelude::*;
 
-pub const VERSION: &str = env!("APP_VERSION");
+pub const VERSION: &str = "0.1.0";
 
 pub const LOGO_NO_BG: Asset = asset!("/assets/plumjam-nobg.png");
 
