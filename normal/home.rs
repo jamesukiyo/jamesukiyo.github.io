@@ -1,4 +1,5 @@
-use common::{
+use dioxus::prelude::*;
+use libs::{
     clipboard::toast_script,
     data::{
         LOGO_NO_BG,
@@ -6,7 +7,6 @@ use common::{
         PROJECTS,
     },
 };
-use dioxus::prelude::*;
 
 #[component]
 pub fn Home() -> Element {

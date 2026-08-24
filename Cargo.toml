@@ -1,5 +1,5 @@
 [workspace]
-members  = [ "common", "nerd", "normal" ]
+members  = [ "libs", "nerd", "normal" ]
 resolver = "3"
 
 [workspace.metadata]
@@ -58,8 +58,8 @@ priority = -1
 [workspace.dependencies]
 serde_yaml_bw = "2.4.0"
 
-[workspace.dependencies.common]
-path = "common"
+[workspace.dependencies.libs]
+path = "libs"
 
 [workspace.dependencies.dioxus]
 features = [ "router" ]

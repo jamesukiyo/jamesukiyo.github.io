@@ -112,10 +112,10 @@
             fileset = lib.fileset.unions [
               ./Cargo.toml
               ./Cargo.lock
-              (craneLib.fileset.commonCargoSources ./common)
+              (craneLib.fileset.commonCargoSources ./libs)
               (craneLib.fileset.commonCargoSources ./normal)
               (craneLib.fileset.commonCargoSources ./nerd)
-              ./common/assets
+              ./libs/assets
               ./normal/input.css
               ./normal/favicon.ico
               ./normal/posts
@@ -125,15 +125,15 @@
           };
 
         # Common library doesn't need WASM target or Tailwind.
-        common = craneLib.buildPackage (
+        libs = craneLib.buildPackage (
           individualCrateArgs
           // {
-            pname = "common";
-            cargoExtraArgs = "--package common";
+            pname = "libs";
+            cargoExtraArgs = "--package libs";
 
-            src = fileSetForCrate ./common;
+            src = fileSetForCrate ./libs;
 
-            CARGO_BUILD_TARGET = null; # Remove WASM target for common library.
+            CARGO_BUILD_TARGET = null; # Remove WASM target for libs.
           }
         );
 
@@ -216,13 +216,13 @@
         };
 
         packages = {
-          inherit common normal nerd;
+          inherit libs normal nerd;
           default = normal;
         };
 
         apps = {
-          common = flake-utils.lib.mkApp {
-            drv = common;
+          libs = flake-utils.lib.mkApp {
+            drv = libs;
           };
           normal = flake-utils.lib.mkApp {
             drv = normal;

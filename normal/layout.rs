@@ -1,8 +1,8 @@
-use common::data::{
+use dioxus::prelude::*;
+use libs::data::{
     LOGO_NO_BG,
     VERSION,
 };
-use dioxus::prelude::*;
 
 use super::{
     Route,

@@ -1,10 +1,10 @@
 use std::sync::OnceLock;
 
-use common::data::{
+use dioxus::prelude::*;
+use libs::data::{
     LOGO_NO_BG,
     ME,
 };
-use dioxus::prelude::*;
 use pulldown_cmark::{
     Parser,
     html,

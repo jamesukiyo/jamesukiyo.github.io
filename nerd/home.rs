@@ -1,5 +1,5 @@
-use common::clipboard::toast_script;
 use dioxus::prelude::*;
+use libs::clipboard::toast_script;
 
 use super::{
     Route,

@@ -1,8 +1,8 @@
-use common::{
+use dioxus::prelude::*;
+use libs::{
     clipboard::toast_script,
     data::ME,
 };
-use dioxus::prelude::*;
 
 #[component]
 pub fn Contact() -> Element {

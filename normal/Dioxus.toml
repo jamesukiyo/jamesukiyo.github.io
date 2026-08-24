@@ -7,7 +7,7 @@ title = "PlumJam"
 
 [web.watcher]
 reload_html = true
-watch_path  = [ ".", "../common" ]
+watch_path  = [ ".", "../libs" ]
 
 # include `assets` in web platform
 [web.resource]

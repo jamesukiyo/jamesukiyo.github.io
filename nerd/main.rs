@@ -7,10 +7,10 @@ mod lines;
 mod project;
 mod scroll;
 
-use common::data;
 use dioxus::prelude::*;
 use home::Home;
 use layouts::Layout;
+use libs::data;
 use project::Project;
 
 #[derive(Debug, Clone, Routable, PartialEq)]

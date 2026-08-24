@@ -14,8 +14,8 @@ path = "main.rs"
 workspace = true
 
 [dependencies]
-common.workspace         = true
 dioxus.workspace         = true
+libs.workspace           = true
 pulldown-cmark.workspace = true
 serde_yaml_bw.workspace  = true
 web-sys.workspace        = true

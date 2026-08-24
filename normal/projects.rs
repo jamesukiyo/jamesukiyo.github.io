@@ -1,5 +1,5 @@
-use common::data::PROJECTS;
 use dioxus::prelude::*;
+use libs::data::PROJECTS;
 
 #[component]
 pub fn Projects() -> Element {

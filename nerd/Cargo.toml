@@ -14,8 +14,8 @@ path = "main.rs"
 workspace = true
 
 [dependencies]
-common.workspace  = true
 dioxus.workspace  = true
+libs.workspace    = true
 web-sys.workspace = true
 
 [features]
