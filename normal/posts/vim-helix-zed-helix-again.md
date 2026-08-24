@@ -54,8 +54,8 @@ be performing an action on, then you pick the action to perform.
 
 `keys: miwd -> selection: match inner word -> action: delete`
 
-Now, before you start screaming like a baboon saying garbage like "🤓☝️ Well Vim
-uses less keystrokes so it's faster!!", read the next sections first:
+Now, before you yap "🤓☝️ Well Vim uses less keystrokes so it's faster!!", read
+the next sections first:
 
 Not only does Helix operate with a superior model, it's also _always_ in
 selection mode. In Vim, selecting text (as you would in Helix) is strictly
@@ -80,13 +80,6 @@ There are loads of other things I have not covered here. Here are a few:
 
 It's all there, with **0** configuration. Maybe I'll write another post soon
 going into more detail.
-
-Finally, I will ask you a broader question: What makes the most sense? Thinking
-before you act? Or acting before you think? If you say the latter, your
-prefrontal cortex is underdeveloped. If you say the former, go and try Helix.
-
-Now that I've explained my opinion in the most inflammatory manner possible,
-it's time to move on to another editor.
 
 ## Zed
 
